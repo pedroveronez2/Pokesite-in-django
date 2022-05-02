@@ -1,0 +1,39 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <title>{% block title %}{% endblock title %}</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="{% static 'pokedex\css\style.css' %}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+
+    <header>
+    <h2>{% block header %}{% endblock header %}</h2>
+    </header>
+
+    <section>
+    <nav>
+        <ul>
+        <li><a href="#">SING</a></li>
+        <li><a href="http://127.0.0.1:8000/pokedex/#">POKEDEX<img src="https://emoji.gg/assets/emoji/pokeball.png" style="width: 20px" alt=""></a></li>
+        <li><a href="#">REGISTER</a></li>
+        
+        </ul>
+    </nav>
+    
+        <main>
+          {% block main %}{% endblock main %}
+        </main>
+      </section>
+  
+      <footer>
+      <p>FEITO POR <img class="icon-pokebola" src="https://cdn-icons-png.flaticon.com/512/361/361998.png" alt=""><a href="">PEDRO AUGUSTO</a></p>
+      </footer>
+  
+  </body>
+  </html>
+  
